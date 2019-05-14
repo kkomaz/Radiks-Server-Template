@@ -4,7 +4,7 @@ const { setup } = require('radiks-server')
 const app = express()
 
 setup({
-  mongoDBUrl: 'mongodb://localhost:27017/my-custom-database'
+  mongoDBUrl: 'mongodb://localhost:27017/your-list'
 }).then((RadiksController) => {
   app.use('/radiks', RadiksController)
 })
