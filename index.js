@@ -1,7 +1,10 @@
 const express = require('express')
 const { setup } = require('radiks-server')
+const keys = require('./config/keys');
+const expressWS = require('express-ws');
 
 const app = express()
+expressWS(app)
 
 app.use((req, res, next) => {
   // Website you wish to allow to connect
@@ -22,7 +25,7 @@ app.use((req, res, next) => {
 });
 
 setup({
-  mongoDBUrl: 'mongodb://localhost:27017/your-list'
+  mongoDBUrl: keys.mongoURI
 }).then((RadiksController) => {
   app.use('/radiks', RadiksController)
 })
