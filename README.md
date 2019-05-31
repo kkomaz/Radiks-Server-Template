@@ -1,4 +1,4 @@
-- Radiks Server template
+- Radiks Server Template
 
 ### Create your own local mongoURI variable for development
 1. Create a dev.js in the config folder
