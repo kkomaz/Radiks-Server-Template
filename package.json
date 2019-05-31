@@ -9,10 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
-    "blockstack": "19.0.0-beta.1",
-    "express": "^4.16.4",
+    "axios": "^0.19.0",
+    "blockstack": "19.1.0",
+    "express": "^4.17.1",
     "express-ws": "^4.0.0",
-    "radiks-server": "^0.1.9"
+    "radiks-server": "^0.1.11"
   }
 }
